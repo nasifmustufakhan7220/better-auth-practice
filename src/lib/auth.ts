@@ -22,6 +22,10 @@ export const auth = betterAuth({
         google:{
             clientId: process.env.BEETER_AUTH_GOGGLE_CLIENT_ID as string,
             clientSecret: process.env.BEETER_AUTH_GOGGLE_CLIENT_SERECT as string
+        },
+        github:{
+            clientId: process.env.BEETER_AUTH_GITHUB_CLIENT_ID as string,
+            clientSecret: process.env.BETTER_AUTH_GITHUB_CLIENT_SERECT as string
         }
     }
 });
