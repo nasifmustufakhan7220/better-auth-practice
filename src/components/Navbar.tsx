@@ -49,12 +49,12 @@ const Navbar = () => {
       </li>
 
       <li>
-        <Link
+        {session?.user && <Link
           href="/profile"
           className={`${pathname === "/profile" && "text-accent"} font-medium `}
         >
           Profile
-        </Link>
+        </Link>}
       </li>
     </>
   );
