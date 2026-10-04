@@ -16,7 +16,7 @@ const SignUpPage = () => {
             callbackURL: "/sign-in",
         });
 
-        console.log(resData, error);
+        console.log("after verification complete",resData, error);
 
     }
 

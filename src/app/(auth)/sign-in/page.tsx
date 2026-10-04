@@ -14,6 +14,7 @@ import { Eye, EyeSlash } from "@gravity-ui/icons";
 import { InputGroup } from "@heroui/react";
 import { useState } from "react";
 import React from "react";
+import Link from "next/link";
 
 const SignInPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -92,6 +93,15 @@ const SignInPage = () => {
           </Button>
         </div>
       </Form>
+
+      <p>
+        Forget password?{" "}
+        <Link href={"/forgot-password"}>
+          <small className="text-blue-400 underline cursor-pointer">
+            click here
+          </small>
+        </Link>
+      </p>
     </div>
   );
 };
